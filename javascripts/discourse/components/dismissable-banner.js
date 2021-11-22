@@ -39,9 +39,4 @@ export default Component.extend({
     this.keyValueStore.setItem("anon-cta-hidden", Date.now());
     this.set("hidden", true)
   },
-
-  @action
-  triggerCta() {
-    this.appEvents.trigger("cta:shown");
-  }
 });
