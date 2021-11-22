@@ -1,0 +1,15 @@
+heading_text:
+  type: string
+  default: "Join the Ring Community conversation and sign up today!"
+subheading_text:
+  type: string
+  default: "When you create an account, we’ll remember exactly what you’ve read, so you’ll always come right back to where you’ve left off."
+signup_text:
+  type: string
+  default: "Sign Up"
+reminder_text:
+  type: string
+  default: "Maybe Later"
+dismiss_text:
+  type: string
+  default: "Never"
