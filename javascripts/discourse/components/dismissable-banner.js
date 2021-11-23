@@ -10,7 +10,7 @@ import { withPluginApi } from "discourse/lib/plugin-api";
 export default Component.extend({
   tagName: "",
   hidden: false,
-  bannerTitle: "",
+  bannerTitle: "Default text",
   init() {
     this._super(...arguments);
     this.appEvents.on("cta:shown", this, this._triggerBanner);
@@ -58,6 +58,8 @@ export default Component.extend({
 shouldShow(hidden) {
   return !hidden;
 },
+
+
 
 @action
 dismissBanner() {
