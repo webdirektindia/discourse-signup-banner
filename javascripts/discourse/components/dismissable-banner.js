@@ -35,6 +35,7 @@ export default Component.extend({
               bannerTitleText = bannerTitleText.replace('{First_name}', currentuserFirstName);
               //result = h('div.section-header', bannerTitleText);
               this.set("bannerTitle", bannerTitleText);
+              this.appEvents.trigger("banner-button-container-widget:refresh");
             }
           }
         });
