@@ -16,6 +16,7 @@ export default Component.extend({
     this.appEvents.on("cta:shown", this, this._triggerBanner);
 
     withPluginApi("0.8.8", (api) => {
+      debugger;
       const currentUser = api.getCurrentUser();
       //let bannerTitleText = { innerHTML: settings.main_heading_content };
       let bannerTitleText = "Welcome, {First_name} are you up for a challenge ->";
