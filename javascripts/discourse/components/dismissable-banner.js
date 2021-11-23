@@ -17,7 +17,6 @@ export default Component.extend({
 
     withPluginApi("0.8.8", (api) => {
       debugger;
-      this.set("bannerTitle", "Default text sample");
       const currentUser = api.getCurrentUser();
       //let bannerTitleText = { innerHTML: settings.main_heading_content };
       let bannerTitleText = "Welcome, {First_name} are you up for a challenge ->";
@@ -40,7 +39,6 @@ export default Component.extend({
             }
           }
         });
-
 
       }
 
