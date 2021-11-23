@@ -14,7 +14,7 @@ export default Component.extend({
   init() {
     this._super(...arguments);
     this.appEvents.on("cta:shown", this, this._triggerBanner);
-
+    this.set("bannerTitle", "Welcome, {First_name} are you up for a challenge ->");
     withPluginApi("0.8.8", (api) => {
       debugger;
       const currentUser = api.getCurrentUser();
